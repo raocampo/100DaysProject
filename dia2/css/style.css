@@ -1,0 +1,93 @@
+:root{
+  --primary-color: #f4d04e;
+  --second-color: #ffffff;
+	--three-color: #808080;
+	--neutro-color: #121212;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--primary-color);
+  color: var(--neutro-color);
+  font-family: 'Figtree', sans-serif;
+}
+
+.contenedor{
+  max-width: 120rem;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.tarjeta{
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-color);
+  border: 1px solid var(--neutro-color);
+  border-radius: 1rem;
+  padding: 2rem;
+  gap: 1rem;
+  box-shadow: 7px 7px;
+}
+
+.tarj-img{
+  width: 100%;
+  background-color: var(--three-color);
+  /*border: 1px solid var(--neutro-color);*/
+  border-radius: 1rem;
+  padding: 0;
+  opacity: 0.5;
+}
+.tarj-img img{
+  width: 10rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.contenido-tarjeta{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contenido-tarjeta h1{
+  font-size: 1.6rem;
+}
+.cont-pub{
+  width: 25%;
+  height: 2rem;
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  padding-top: 0.5rem;
+  text-align: center;
+  font-weight: 900;
+  font-size: 0.8rem;
+}
+.cont-fecha{
+  font-size: 0.8rem;
+}
+
+.img-footer{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;  
+}
+.img-footer img{
+  width: 2rem;
+  border-radius: 50%;
+}
+.img-footer p{
+  text-align: center;
+  font-weight: 700;
+}
