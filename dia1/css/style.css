@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    height: 120vh;
+    background-color: #000;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    background-color: #131313;
+    /*border: 5px solid #000;*/
+    color: #fff;
+}
+
+.centrar-contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+
+.contenedor img{
+    width: 8rem;
+    height: 7rem;
+    margin-top: 5rem;
+    top: -8rem;
+    left: 13rem;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    opacity: 0.7;
+}
+.tarjeta h1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5rem;
+    
+}
+.tarjeta h3{
+    width: 4rem;
+    font-family: 'Kanit', sans-serif;
+    background-color: #4e4e4e;
+    border-radius: 1rem;
+    font-size: 0.5rem;
+    color: #d4d1d1;
+}
+.tarjeta p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.7rem;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+}
+
+.redes-sociales{
+    display: flex;
+    gap: 2rem;
+}
+
