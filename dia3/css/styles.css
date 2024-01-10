@@ -13,7 +13,7 @@ Tabla de contenidos:
 /* ----- Variables ----- */
 * {
 	--primary-font-family: 'Poppins', sans-serif;
-	--body-bg-color: #EEF2F9;
+	--body-bg-color: #eef2f9;
 	--btn-bg-color: #4788E9;
 	--text-color: #191847;
 	--white-color: #FFFFFF;
@@ -34,3 +34,122 @@ body {
 	line-height: var(--lh-text);
 }
 
+.contenedor{
+	width: 120vw;
+	height: 120vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--body-bg-color);
+}
+
+.tarjeta{
+	width: 40rem;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	background-color: var(--white-color);
+	border-radius: 1rem;
+	padding: 2rem;
+	box-shadow: inset 15px 15px 20px 11px 0.75 rgb(238, 242, 249);
+}
+.img-producto img{
+	margin-top: 2rem;
+	padding: 0 1.5rem;
+}
+.contenido-tarjeta{
+	padding: 2.3rem 0;
+}
+small{
+	border-radius: 2rem;
+	padding: 0.5rem 0.3rem;
+	background-color: var(--black-color);
+	color: var(--white-color);
+}
+
+.titulo{
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+.precios{
+	margin-bottom: 1.5rem;
+}
+
+.precios p{
+	font-size: 0.5rem;
+	font-weight: 400;
+	opacity: 0.5;
+}
+.precio-ant{
+	text-decoration: line-through;
+	font-size: 0.8rem;
+}
+
+.precio-nuevo{
+	font-weight: 900;
+	font-size: 2rem;
+}
+
+.btn-primary{
+	display: inline-block;
+	width: 90%;
+	text-decoration: none;
+	background-color: var(--btn-bg-color);
+	text-align: center;
+	color: var(--white-color);
+	padding: 1rem 0;
+	border-radius: 0.5rem;
+	font-size: var(--font-size);
+	box-shadow: #2377f5 0 5px;
+	margin-bottom: 1.2rem;
+}
+.cant i{
+	
+	color: chartreuse;
+	font-size: 0.5rem;
+	margin-right: 0.4rem;
+
+}
+.cant{
+	font-size: 0.5rem;
+	font-weight: 700;
+	opacity: 0.7;
+	margin-bottom: 2.5rem;
+}
+
+.botones{
+	width: 90%;
+	display: flex;
+	justify-content: space-evenly;
+	gap: 2rem;
+	color: var(--text-color);
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+.botones a{
+	text-decoration: none;
+	color: var(--text-color);
+	font-size: 0.7rem;
+}
+.adicionar .favorito{
+	width: 40%;
+	margin: 0;
+	padding: 0;
+}
+.adicionar a{
+	display: inline-block;
+	width: 100%;
+	border: 1px solid var(--black-color);
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+}
+
+.favorito a{
+	display: inline-block;
+	width: 100%;
+	border: 1px solid var(--black-color);
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+}
