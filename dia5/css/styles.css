@@ -1,0 +1,164 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- */
+
+
+/* ----- Fuente ----- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+/* ----- Variables ----- */
+* {
+	/* colores primarios*/
+	--dark-cyan: hsl(158, 36%, 37%);
+	--cream-color: hsl(30, 38%, 92%);
+	/* colores neutrales*/
+	--very-dar-blue: hsl(212, 21%, 14%);
+	--dark-grayish-blue: hsl(228, 12%, 48%);
+	--white-color: hsl(0, 0%, 100%);
+	/* fuentes */
+	--fraunces-family: 'Fraunces', serif;
+	--montserrat-family: 'Montserrat', sans-serif;
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body{
+	background-color: var(--cream-color);
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contenedor{
+	width: 90%;
+	height: auto;	
+}
+@media (min-width: 768px) {
+	.contenedor{
+		width: 60vw;
+		height: 80vh;
+	}
+}
+.img-desktop{
+	display: none;
+}
+@media (min-width: 768px) {
+	.img-desktop{
+		display: block;
+		width: 100%;
+		border-top-left-radius: 2rem;
+		border-bottom-left-radius: 2rem;
+	}
+	.img-mobile{
+		display: none;
+	}
+}
+
+.img-mobile{
+	width: 100%;
+	border-radius: 2rem 2rem 0 0;
+	overflow: hidden;
+}
+
+.card{
+	width: 100%;
+	height: auto;
+	background-color: var(--white-color);
+	border-radius: 2rem;
+}
+@media (min-width: 768px) {
+	.card{
+		display: flex;
+		gap: 1.5rem;
+
+	}
+}
+.contenido{
+	width: 90%;
+	opacity: 0.7;
+	padding: 1rem;
+	overflow: hidden;
+}
+
+@media (min-width: 768px) {
+	.contenido{
+		width: 80%;
+	}
+}
+
+.contenido small{
+	font-family: var(--montserrat-family);
+	color: var(--dark-grayish-blue);
+	font-weight: 500;
+	letter-spacing: 6px;
+}
+.contenido-body{
+	margin-top: 1.5rem;
+	padding: 0 1rem;
+}
+@media (min-width: 768px) {
+	.contenido-body{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+}
+.contenido-body h1{
+	line-height: 2rem;
+	font-family: var(--fraunces-family);
+	font-size: 1.8rem;
+	padding-right: 1rem;
+}
+
+.contenido-body p{
+	line-height: 1.5rem;
+	font-family: var(--montserrat-family);
+	font-size: 1rem;
+	color: var(--very-dar-blue);
+	padding-right: 0.7rem;
+}
+
+.precios{
+	display: flex;
+	align-items: center;
+	margin: 1.5rem 0;
+}
+.precio{
+	font-family: var(--fraunces-family);
+	font-size: 2rem;
+	color: var(--dark-cyan);
+	margin-right: 2rem;
+}
+
+button{
+	display: block;
+	width: 100%;
+	background-color: var(--dark-cyan);
+	color: var(--white-color);
+	font-size: 1rem;
+	font-weight: 800;
+	font-family: var(--montserrat-family);
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	padding: 1rem;
+	border-radius: 0.8rem;
+}
+
+@media (min-width: 768px) {
+	button{
+		width: 90%;
+	}
+}
+
