@@ -1,0 +1,138 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- */
+
+
+/* ----- Fuente ----- */
+@import url("https://fonts.googleapis.com/css?family=Merryweather&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+
+/* ----- Variables ----- */
+* {
+	--title-font-family: 'Merryweather', sans-serif;
+	--body-font-family: 'Poppins', sans-serif;
+
+	--body-bg-color: #D2DDF6;
+	--card-bg-color: #F6F9FF;
+	--text-color: #12163C;
+
+	--blue-color-1: #96B3FF;
+	--blue-color-2: #6792FF;
+	--blue-color-3: #4473EA;
+	--blue-color-4: #1A52E1;
+
+	--fs-text: 1rem;
+	--lh-text: 22px;
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body {
+	font-family: var(--primary-font-family);
+	background-color: var(--body-bg-color);
+	color: var(--text-color);
+	font-size: var(--fs-text);
+	line-height: var(--lh-text);
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.contenedor{
+	width: 40rem;
+	height: auto;
+	background-color: var(--card-bg-color);
+	border-radius: 1rem;
+	box-shadow: 10px 10px #ebf0fa;
+	padding: 1rem 2rem;
+}
+
+.titulo p{
+	font-family: var(--body-font-family);
+}
+
+.card{
+	display: flex;
+	justify-content: space-around;
+	border-radius: 0.5rem;
+	line-height: 0.2rem;
+}
+
+.circulo{
+	width: 10rem;
+	height: 10rem;
+	border-top: 20px solid var(--blue-color-2);
+	border-bottom: 20px solid var(--blue-color-1);
+	border-left: 20px solid var(--blue-color-3);
+	border-right: 20px solid var(--blue-color-4);
+	border-radius: 50%;
+	box-shadow: inset 0 0 10px 10px var(--body-bg-color);
+}
+
+.circulo p{
+	text-align: center;
+	margin-top: 4rem;
+	line-height: var(--lh-text);
+}
+
+.contenido{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 3rem;
+	font-family: var(--body-font-family);
+}
+
+.contenido-linea{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 3rem;
+}
+
+.contenido-linea_uno{
+	width: 9rem;
+	height: 0.2rem;
+	border-radius: 0.5rem;
+	background-color: var(--blue-color-4);
+	display: inline-block;
+	margin: 1rem 0.2rem 0 4rem;
+}
+.contenido-linea_dos{
+	width: 8rem;
+	height: 0.2rem;
+	border-radius: 0.5rem;
+	background-color: var(--blue-color-3);
+	display: inline-block;
+	margin: 1rem 0.2rem 0 5rem;
+}
+.contenido-linea_tres{
+	width: 5rem;
+	height: 0.2rem;
+	border-radius: 0.5rem;
+	background-color: var(--blue-color-2);
+	display: inline-block;
+	margin: 1rem 0.2rem 0 14rem;
+}
+.contenido-linea_cuatro{
+	width: 3rem;
+	height: 0.2rem;
+	border-radius: 0.5rem;
+	background-color: var(--blue-color-1);
+	display: inline-block;
+	margin: 1rem 0.2rem 0 16rem;
+}
+
+.enlace{
+	margin-top: 2rem;
+	text-align: end;
+}
