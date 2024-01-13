@@ -1,0 +1,215 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+/* ----- Fuente ----- */
+  
+/* ----- Variables ----- */
+:root {
+    /* Primarios */
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+  
+    /* Gradientes */
+    --light-slate-blue-bg: hsl(252, 100%, 67%);
+    --light-royal-blue-bg: hsl(241, 81%, 54%);
+    --violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persian-blue-circle: hsla(241, 72%, 46%, 0);
+  
+    /* Neutrales */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+  
+    --light-red-rgb: 255, 82, 82;
+    --orangey-yellow-rgb: 255, 181, 42;
+    --green-teal-rgb: 44, 204, 113;
+    --cobalt-blue-rgb: 52, 152, 219;
+  }
+  
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.tarjeta{
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 16px;
+  width: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+  
+.tarjeta-contenido{
+  padding: 16px;
+}
+  
+.card-title{
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+  
+.summary-title{
+  margin-left: 5px;
+}
+.score{
+  background: radial-gradient(at center top, var(--light-slate-blue-bg), var(--light-royal-blue-bg)
+  );
+  color: var(--pale-blue);
+  text-align: center;
+  width: 50%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+  
+.circular-background{
+  width: 200px;
+  height: 200px;
+  background-color: var(--violet-blue-circle);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+ 
+.scored{
+  font-size: 100px;
+  font-weight: 800;
+}
+ 
+.summary{
+  width: 50%;
+}
+
+.evaluation{
+  display: flex;
+  justify-content: space-between;
+}
+  
+  .scored-evaluation {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+    font-weight: 400;
+  }
+  
+  .score-text {
+    color: var(--dark-gray-blue);
+  }
+  
+  .reaction,
+  .memory,
+  .verbal,
+  .visual {
+    border-radius: 6px;
+    height: 23px;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .reaction {
+    background: rgba(var(--light-red-rgb), 0.3);
+  }
+  .reaction-text {
+    color: var(--light-red);
+  }
+  
+  .memory {
+    background: rgba(var(--orangey-yellow-rgb), 0.3);
+  }
+  .memory-text {
+    color: var(--orangey-yellow);
+  }
+  
+  .verbal {
+    background: rgba(var(--green-teal-rgb), 0.3);
+  }
+  .verbal-text {
+    color: var(--green-teal);
+  }
+  
+  .visual {
+    background: rgba(var(--cobalt-blue-rgb), 0.3);
+  }
+  .visual-text {
+    color: var(--cobalt-blue);
+  } 
+  
+  .reaction-text,
+  .memory-text,
+  .verbal-text,
+  .visual-text {
+      display: flex;
+      align-items: center;
+  }
+  
+  i {
+    margin-right: 5px;
+  }
+  
+  .continue {
+    background: linear-gradient(var(--dark-gray-blue), var(--dark-gray-blue));
+    color: var(--white);
+    width: 100%;
+    border-radius: 20px;
+    height: 45px;
+  }
+  
+  @media (max-width: 895px) {
+  
+      body {
+          height: 0;
+      }
+    .card {
+      flex-direction: column;
+      margin: auto;
+      width: 100%;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      height: 750px;
+    }
+    .score {
+      height: 50%;
+      width: 100%;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    .result-container {
+      padding: 10px;
+    }
+    .summary {
+      height: 50%;
+      width: 100%;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    .card-content {
+      padding: 0;
+    }
+}
