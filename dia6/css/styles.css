@@ -62,15 +62,15 @@ body{
   padding: 16px;
 }
   
-.card-title{
+.tarjeta-titulo{
   font-size: 1.2rem;
   margin-bottom: 8px;
 }
   
-.summary-title{
+.contenido-titulo{
   margin-left: 5px;
 }
-.score{
+.numero{
   background: radial-gradient(at center top, var(--light-slate-blue-bg), var(--light-royal-blue-bg)
   );
   color: var(--pale-blue);
@@ -80,7 +80,7 @@ body{
   border-bottom-right-radius: 20px;
 }
   
-.circular-background{
+.circulo{
   width: 200px;
   height: 200px;
   background-color: var(--violet-blue-circle);
@@ -92,124 +92,112 @@ body{
   margin: auto;
 }
  
-.scored{
+.numeros{
   font-size: 100px;
   font-weight: 800;
 }
  
-.summary{
+.contenido{
   width: 50%;
 }
 
-.evaluation{
+.cont-numeros{
   display: flex;
   justify-content: space-between;
 }
   
-  .scored-evaluation {
-    display: flex;
-    justify-content: space-between;
-    color: var(--white);
-    font-weight: 400;
-  }
+.cont-num-evaluar{
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+  font-weight: 400;
+}
   
-  .score-text {
-    color: var(--dark-gray-blue);
-  }
+.cont-num-parr{
+  color: var(--dark-gray-blue);
+}
   
-  .reaction,
-  .memory,
-  .verbal,
-  .visual {
-    border-radius: 6px;
-    height: 23px;
-    padding: 10px;
-    margin: 10px;
-  }
+.cont-reaction, .cont-memory, .cont-verbal, .cont-visual{
+  border-radius: 6px;
+  height: 23px;
+  padding: 10px;
+  margin: 10px;
+}
   
-  .reaction {
-    background: rgba(var(--light-red-rgb), 0.3);
-  }
-  .reaction-text {
+.cont-reaction{
+  background: rgba(var(--light-red-rgb), 0.3);
+}
+.cont-parr-rec{
     color: var(--light-red);
-  }
+}
   
-  .memory {
+.cont-memory{
     background: rgba(var(--orangey-yellow-rgb), 0.3);
-  }
-  .memory-text {
-    color: var(--orangey-yellow);
-  }
+}
+.cont-parr-mem{
+  color: var(--orangey-yellow);
+}
   
-  .verbal {
-    background: rgba(var(--green-teal-rgb), 0.3);
-  }
-  .verbal-text {
-    color: var(--green-teal);
-  }
+.cont-verbal{
+  background: rgba(var(--green-teal-rgb), 0.3);
+}
+.cont-parr-verb{
+  color: var(--green-teal);
+}
   
-  .visual {
-    background: rgba(var(--cobalt-blue-rgb), 0.3);
-  }
-  .visual-text {
-    color: var(--cobalt-blue);
-  } 
+.cont-verbal{
+  background: rgba(var(--cobalt-blue-rgb), 0.3);
+}
+.cont-parr-vis{
+  color: var(--cobalt-blue);
+} 
   
-  .reaction-text,
-  .memory-text,
-  .verbal-text,
-  .visual-text {
-      display: flex;
-      align-items: center;
-  }
+.cont-parr-rec, .cont-parr-mem, .cont-parr-verb, .cont-parr-vis{
+  display: flex;
+  align-items: center;
+}
   
-  i {
-    margin-right: 5px;
-  }
+i{
+  margin-right: 5px;
+}
   
-  .continue {
-    background: linear-gradient(var(--dark-gray-blue), var(--dark-gray-blue));
+.btn{
+  background: linear-gradient(var(--dark-gray-blue), var(--dark-gray-blue));
     color: var(--white);
     width: 100%;
     border-radius: 20px;
     height: 45px;
+}
+  
+@media (max-width: 760px){
+  
+  .tarjeta{
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    height: 750px;
   }
-  
-  @media (max-width: 895px) {
-  
-      body {
-          height: 0;
-      }
-    .card {
-      flex-direction: column;
-      margin: auto;
-      width: 100%;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
-      height: 750px;
-    }
-    .score {
-      height: 50%;
-      width: 100%;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
-    }
-    .result-container {
-      padding: 10px;
-    }
-    .summary {
-      height: 50%;
-      width: 100%;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
-    }
-    .card-content {
-      padding: 0;
-    }
+  .numero{
+    height: 50%;
+    width: 80%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+  .contenido-numeros{
+    padding: 1rem;
+  }
+  .contenido{
+    height: 50%;
+    width: 80%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
 }
