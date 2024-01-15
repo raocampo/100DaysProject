@@ -1,0 +1,167 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+/* ----- Variables ----- */
+:root{
+/*Colores primarios*/
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+/*Colores neutrales*/
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+/*Tipografia*/
+  --paragraph: 1.1rem;
+  --family: 'Outfit', sans-serif;
+  --weight: 300, 400, 600;
+}
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+
+body{
+  background-color: var(--main-bg);
+  font-family: var(--family);
+  display: grid;
+  place-items: center;
+}
+
+.tarjeta{
+  max-width: 20rem;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--card-bg);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.contenido{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido_img{
+  width: 100%;
+  padding: 2rem;
+}
+
+.contenido_img img {
+  width: 100%;
+  border-radius: 2rem;
+}
+.contenido_img img:hover{
+  z-index: -1;
+}
+.contenido_img:hover{
+  background-color: var(--cyan);
+  background-image: url(/dia8/images/icon-view.svg);
+  cursor: pointer;
+  opacity: 0.8;
+}
+.contenido_texto{
+  width: 100%;
+}
+.contenido_titulo{
+  font-size: 1.7rem;
+  color: var(--white);
+  margin-top: 0;
+}
+.contenido_titulo:hover{
+  color: var(--cyan);
+  cursor: pointer;
+}
+.contenido_parrafo{
+  color: var(--soft-blue);
+  font-size: var(--paragraph);
+  text-align: justify;
+  line-height: 2rem;
+}
+
+.contenido_valores {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+.etherum{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.etherum span{
+  color: var(--cyan);
+}
+
+.reloj{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.reloj span{
+  color: var(--soft-blue);
+}
+
+.linea{
+  width: 100%;
+  border-bottom: 0.15rem solid var(--line);
+  margin-bottom: 2rem;
+}
+
+.avatar{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.avatar img{
+  width: 10%;
+  height: 10%;
+  border: 0.1rem solid var(--white);
+  border-radius: 50%;
+}
+
+.avatar span{
+  color: var(--soft-blue);
+  font-weight: var(--weight);
+  margin-right: 0.3rem;
+}
+
+.avatar p{
+  color: var(--white);
+  font-weight: 600;
+}
+
+.avatar p:hover{
+  color: var(--cyan);
+  cursor: pointer;
+}
+
