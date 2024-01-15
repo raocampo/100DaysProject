@@ -70,9 +70,7 @@ body{
   width: 100%;
   border-radius: 2rem;
 }
-.contenido_img img:hover{
-  z-index: -1;
-}
+
 .contenido_img:hover{
   background-color: var(--cyan);
   background-image: url(/dia8/images/icon-view.svg);
