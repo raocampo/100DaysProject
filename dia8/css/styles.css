@@ -62,28 +62,33 @@ body{
 }
 
 .contenido_img{
-  width: 100%;
-  padding: 2rem;
-}
-
-.contenido_img img {
-  width: 100%;
+  width: 90%;
+  height: 20rem;
   border-radius: 2rem;
+  margin-top: 2rem;
+  background-image: url(/dia8/images/image-equilibrium.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.contenido_img:hover{
+  background-image: url("/dia8/images/icon-view.svg"); 
+  background-size: 20% 20%;
+  background-color: var(--cyan);
+  opacity: 0.5;
+  cursor: pointer;
 }
 
-.contenido_img:hover{
+/*.contenido_img img{
   background-color: var(--cyan);
-  background-image: url(/dia8/images/icon-view.svg);
-  cursor: pointer;
-  opacity: 0.8;
-}
+  opacity: 0.7;
+}*/
 .contenido_texto{
   width: 100%;
 }
 .contenido_titulo{
   font-size: 1.7rem;
   color: var(--white);
-  margin-top: 0;
 }
 .contenido_titulo:hover{
   color: var(--cyan);
@@ -100,7 +105,7 @@ body{
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .etherum{
@@ -137,6 +142,7 @@ body{
   justify-content: start;
   align-items: center;
   gap: 1rem;
+  margin-top: -1rem;
   margin-bottom: 2rem;
 }
 
