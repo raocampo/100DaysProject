@@ -104,6 +104,9 @@ body{
   font-size: 0.8rem;
   font-weight: 700;
 }
+.contenido_plan a:hover{
+  color: var(--desaturated-blue);
+}
 
 .contenido_plan-texto{
   display: flex;
@@ -146,10 +149,18 @@ body{
   color: #fff;
   box-shadow: 2px 2px 15px var(--bright-blue);
 }
+.btn:hover{
+  background-color: var(--desaturated-blue);
+  cursor: pointer;
+}
 
 .pedidos a{
   font-size: 0.8rem;
   text-decoration: none;
   color: var(--desaturated-blue);
   font-weight: 800;
+}
+
+.pedidos a:hover{
+  color: var(--dark-blue);
 }
