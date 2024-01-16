@@ -40,7 +40,7 @@ Tabla de contenidos:
 }
 
 body{
-  background-image: url(/dia9/images/pattern-background-mobile.svg);
+  background-image: url(../images/pattern-background-mobile.svg);
   background-repeat: no-repeat;
   background-size: 100% 50%;
   background-color: var(--pale-blue);
