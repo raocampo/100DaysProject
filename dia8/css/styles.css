@@ -17,6 +17,7 @@ Tabla de contenidos:
 /*Colores primarios*/
   --soft-blue: hsl(215, 51%, 70%);
   --cyan: hsl(178, 100%, 50%);
+  --transparent: hsl(178, 100%, 50%, .3);
 
 /*Colores neutrales*/
   --main-bg: hsl(217, 54%, 11%);
@@ -41,6 +42,8 @@ body{
   place-items: center;
 }
 
+/*Sección Tarjeta*/
+
 .tarjeta{
   max-width: 20rem;
   max-height: 100vh;
@@ -53,6 +56,8 @@ body{
   overflow: hidden;
 }
 
+/*Sección Contenido*/
+
 .contenido{
   width: 90%;
   display: flex;
@@ -61,28 +66,48 @@ body{
   align-items: center;
 }
 
+/*Sección Imagen*/
 .contenido_img{
-  width: 90%;
-  height: 20rem;
-  border-radius: 2rem;
-  margin-top: 2rem;
-  background-image: url("/dia8/images/image-equilibrium.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  padding: 1.2rem 1rem;
 }
-.contenido_img:hover{
-  background-image: url("/dia8/images/icon-view.svg"); 
-  background-size: 20% 20%;
-  background-color: var(--cyan);
-  opacity: 0.5;
+
+.contenido_img-principal{
+  width: 100%;
+  position: relative;
+}
+
+.contenido_img-principal:hover .contenido_img-sec{
+  opacity: 2;
   cursor: pointer;
 }
 
-/*.contenido_img img{
-  background-color: var(--cyan);
-  opacity: 0.7;
-}*/
+.contenido_img-principal img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1.5rem;
+}
+
+.contenido_img-sec{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--transparent);
+  border-radius: 1.5rem;
+  opacity: 0;
+  transition: all ease .5s;
+}
+.img_sec{
+  width: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*Sección Textos*/
+
 .contenido_texto{
   width: 100%;
 }
