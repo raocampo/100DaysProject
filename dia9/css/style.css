@@ -44,7 +44,7 @@ body{
   background-repeat: no-repeat;
   background-size: 100% 50%;
   background-color: var(--pale-blue);
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .contenedor{
