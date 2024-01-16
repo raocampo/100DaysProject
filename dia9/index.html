@@ -1,37 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="R@0">
+  <meta name="description" content="Order summary component">
+  <!--Google Fuentes Tipografía-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <!--Estilos CSS-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--Favicon Icono-->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+  <title>Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  Order Summary
+  <main class="contenedor">
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+    <!--<img class="contenedor_img" src="images/pattern-background-desktop.svg" alt="fondo-curvo">-->
 
-  Annual Plan
-  $59.99/year
+    <section class="tarjeta">
 
-  Change
+      <div class="tarjeta_img">
+        <img src="images/illustration-hero.svg" alt="">
+      </div>
+      <div class="contenido">
+        <h1 class="contenido_titulo">Order Summary</h1>
+        <p class="contenido_parrafo">You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!</p>
+        <div class="contenido_plan">
+          <div class="contenido_plan-texto">
+            <img src="images/icon-music.svg" alt="icono-musica">
+            
+            <div class="plan">
+              <span class="plan_texto">Annual Plan</span>
+              <span class="plan_valor">$59.99/year</span>
+            </div>
+          </div>
+          <a href="#">Change</a>
+        </div>
+        <div class="pedidos">
+          <button class="btn">Proceed to Payment</button>
+          <a href="">Cancel Order</a>
+        </div>
+      </div>
+      
+    </section>
 
-  Proceed to Payment
-  Cancel Order
-  
+  </main>
+
+
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Replicated by <a href="https://frontend-club.bullet.site/order-summary-component/" target="_blank">Frontend Club
+      #100DaysOfProjects.</a>.
+    Coded by <a href="https://github.com/raocampo">Robert Ocampo</a>.
   </div>
 </body>
+
 </html>
