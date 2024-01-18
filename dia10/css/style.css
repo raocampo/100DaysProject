@@ -25,6 +25,11 @@
   color: var(--Soft-violet--accent);
   margin-top: -3rem;
 }
+@media (max-width: 760px){
+  .attribution{
+    margin-top: 0;
+  }
+}
 .attribution a{
   color: var(--stat-headings);
   text-decoration: none;
@@ -66,9 +71,6 @@ body{
   box-shadow: 3px 3px 25px var(--Soft-violet--accent);
 }
 
-/*.tarjeta_mobile img{
-  display: none;
-}*/
 @media (max-width: 760px){
   .tarjeta{
     width: 300px;
@@ -129,12 +131,18 @@ body{
 @media (max-width: 760px){
   .contenido{
     width: 90%;
+    height: 350px;
     padding: 2rem;
   }
 }
 .contenido_texto h1{
   font-size: 1.7rem;
   color: var(--white);
+}
+@media (max-width: 760px){
+  .contenido_texto{
+    margin-top: 2rem;
+  }
 }
 .contenido_texto span{
   color: var(--Soft-violet--accent);
@@ -149,7 +157,20 @@ body{
   display: flex;
   gap: 2rem;
 }
-
+@media (max-width: 760px){
+  .contenido_datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .numero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .numero{
   color: var(--white);
   font-size: 1.4rem;
