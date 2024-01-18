@@ -69,13 +69,18 @@ body{
 /*.tarjeta_mobile img{
   display: none;
 }*/
-@media (max-width: 375px){
+@media (max-width: 760px){
   .tarjeta{
     width: 300px;
     height: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+}
+.tarjeta_mobile img{
+  display: none;
 }
 
 .glaseado{
@@ -91,17 +96,25 @@ body{
   background-image: linear-gradient(hsla(0, 0%, 100%, 0.6), hsla(0, 0%, 100%, 0.6)), url(../images/image-header-desktop.jpg);
   cursor: pointer;
 }
-/*@media (max-width: 375px){
-  .glaseado{
-    width: 70%;
-    margin-top: -25px;
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-  background-image: linear-gradient(hsl(277, 64%, 61%, 0.6), hsl(277, 64%, 61%, 0.6)), url(../images/image-header-mobile.jpg);
-  background-position: 50px 60px;
-  background-size: cover;
+@media (max-width: 760px){
+  .tarjeta_mobile img{
+    display: block;
+    width: 100%;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    opacity: 0.3;
+    overflow: hidden;
   }
-}*/
+  .glaseado_mobil{
+    width: 100%;
+    background: var(--Soft-violet--accent);
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+  }
+  .glaseado_mobil:hover{
+    background: var(--stat-headings);
+  }
+}
 
 .contenido{
   width: 70%;
@@ -113,11 +126,12 @@ body{
   align-items: center;
   gap: 2rem;
 }
-/*@media (max-width: 375px){
+@media (max-width: 760px){
   .contenido{
-    margin-top: 20rem;
+    width: 90%;
+    padding: 2rem;
   }
-}*/
+}
 .contenido_texto h1{
   font-size: 1.7rem;
   color: var(--white);
