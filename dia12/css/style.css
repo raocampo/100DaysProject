@@ -1,0 +1,46 @@
+:root{
+  /*Colores Primarios*/
+  --main-background: hsl(233, 47%, 7%);
+  --card-background: hsl(244, 38%, 16%);
+  --soft-violet-accent: hsl(277, 64%, 61%);
+  
+  /*Colores Second*/
+  --White: hsl(0, 0%, 100%);
+  --main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+
+  /*Tipografia*/
+  --font-primary: 
+  --font-second: 
+
+}
+
+/*Utilidades*/
+
+.attribution{
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a{
+  color: hsl(228, 45%, 44%);
+}
+
+body{
+  
+}
+
+/*Contenedor*/
+
+.contenedor{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta{
+  max-width: 50rem;
+  height: auto;
+  display: flex;
+}
