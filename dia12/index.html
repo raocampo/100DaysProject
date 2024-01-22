@@ -1,35 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
+  <meta name="author" content="Robert Ocampo (R@0/CorpSimtelec)"/>
+  <meta name="description" content="3-column preview card component"/>
+
+  <!--Google Fonts tipografia-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!--Estilos-->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!--Favicon / iconos-->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+  <!--Titulo Página-->
   <title>Frontend Mentor | Profile card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  Victor Crest
+  <main class="contenedor">
+    <div class="tarjeta">
+      <div class="tarjeta_header"></div>
+      <div class="foto">
+        <img src="images/Yo.jpg" alt="Mi imagen">
+      </div>
+      <div class="tarjeta_contenido">
+        <span class="nombre">Robert Ocampo</span>
+        <span class="edad">46</span>
+        <div class="ciudad">Loja-Ecuador</div>
+      </div>
+      <!--<div class="linea"></div>-->
+      <div class="contenido_datos">
+        <div class="estadistica">
+          <div class="numero">80K</div>
+          <div class="texto">Followers</div>
+        </div>
+        <div class="estadistica">
+          <div class="numero">803K</div>
+          <div class="texto">Likes</div>
+        </div>
+        <div class="estadistica">
+          <div class="numero">1.4K</div>
+          <div class="texto">Photos</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--Victor Crest
   26
-  London
+  London-->
 
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Replicated
+    by <a href="https://frontend-club.bullet.site/order-summary-component/" target="_blank">Frontend Club
+      #100DaysOfProjects.</a>
+    Coded by <a href="https://github.com/raocampo">Robert Ocampo</a>.
   </div>
 </body>
+
 </html>
