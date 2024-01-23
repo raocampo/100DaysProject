@@ -28,6 +28,7 @@ body{
   font-family: var(--fuente);
   background-color: var(--light-gray);
   font-size: 16px;
+  overflow: hidden;
 }
 
 /*Mobile First*/
@@ -40,6 +41,7 @@ body{
   height: 730px;
   margin: 60px auto 60px;
   border-radius: 8px;
+  box-shadow: 0px 10px 20px -10px var(--grayish-blue);
   overflow: hidden;
 }
 
