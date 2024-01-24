@@ -1,0 +1,59 @@
+/*Tipografia Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
+/*Variables*/
+:root{
+  /*Colores Primarios*/
+
+  --green: hsl(75, 94%, 57%);
+  
+  /*Colores Segundarios*/
+
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+
+  /*Tipografia*/
+  --fuente: 'Inter', sans-serif;
+
+}
+
+
+/*Sección Utilidade y Generales*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--off-black);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Mobile First*/
+
+/*Contenedor*/
+
+.contenedor{
+  width: 400px;
+  border: 1px solid #fff;
+  margin: 10rem 0 5rem 0;
+}
+
+header{
+  max-width: 200px ;
+  margin: 0 auto;
+}
+
+header img{
+  width: 100%;
+  margin-top: 3em;
+  border-radius: 50%;
+}
