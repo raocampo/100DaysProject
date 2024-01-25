@@ -27,11 +27,156 @@
 
 body{
   font-family: var(--fuente-body);
-  background: url(../images/bg-mobile.svg);
+  background-color: var(--violet);
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
   font-size: 16px;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 /*Mobile First*/
 
 /*Contenedor*/
+
+.contenedor{
+  margin: 0 auto;
+  width: 350px;
+  height: auto;
+}
+
+.encabezado{
+  margin-top: 3rem;
+}
+
+.logo{
+  max-width: 120px;
+  margin-bottom:  1.2rem;
+  margin-left: 1.55rem;
+
+}
+
+.logo img{
+  width: 100%;
+}
+
+.imagenmockups{
+  max-width: 400px;
+}
+
+.imagenmockups img{
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.contenido{
+  max-width: 350px;
+  text-align: center;
+  font-family: var(--fuente-second);
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.titulo{
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  padding: 0 2rem;
+}
+
+.contenido p{
+  line-height: 1.8rem;
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
+}
+
+button{
+  width: 250px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  color: var(--violet);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: var(--soft-magenta);
+  color: #fff;
+}
+
+.redes-sociales{
+  width: 100%;
+  margin: 3rem 0 3rem 0;
+  display: inline-flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.bxl-facebook, .bxl-twitter, .bxl-instagram{
+  font-size: 1.2rem;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.bxl-facebook:hover, .bxl-twitter:hover, .bxl-instagram:hover{
+  font-size: 1.7rem;
+  padding: 0.2rem;
+  color: var(--soft-magenta);
+  border: 2px solid var(--soft-magenta);
+  /*font-weight: 800;*/
+}
+
+
+/*footer*/
+footer{
+  .attribution{
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    /*color: hsl(228, 45%, 44%);*/
+    color: #a7a6a6;
+  }
+}
+
+/*Desktop*/
+
+/*Media queries*/
+
+@media (min-width: 760px ) { 
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    gap: 2rem;
+    overflow: hidden;
+  }
+
+  .contenedor{
+    max-width: 120rem;
+    width: 100%;
+    display: grid;
+    /*place-items: center;*/
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imagenmockups{
+    width: 100%;
+    margin-left: 3rem;
+  }
+  .redes-sociales{
+    justify-self: end;
+  }
+}
