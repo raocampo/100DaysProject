@@ -146,26 +146,21 @@ footer{
 
 @media (min-width: 760px ) { 
   body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-image: url(../images/bg-desktop.svg);
     background-repeat: no-repeat;
     gap: 2rem;
-    overflow: hidden;
+    /*overflow: hidden;*/
   }
 
   .contenedor{
-    max-width: 120rem;
     width: 100%;
     display: grid;
-    /*place-items: center;*/
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
 
   .contenido{
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,6 +172,7 @@ footer{
     margin-left: 3rem;
   }
   .redes-sociales{
+    grid-column: 1/-1;
     justify-self: end;
   }
 }
