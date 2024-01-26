@@ -150,7 +150,7 @@ footer{
   body{
     background-image: url(../images/bg-desktop.svg);
     background-repeat: no-repeat;
-    overflow: hidden;
+    /*overflow: hidden;*/
   }
 
   .logo{
