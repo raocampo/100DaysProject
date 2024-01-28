@@ -35,6 +35,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: var(--fuente);
 }
 
 /*Mobile First*/
@@ -42,18 +43,144 @@ body{
 /*Contenedor*/
 
 .contenedor{
-  width: 400px;
-  border: 1px solid #fff;
-  margin: 10rem 0 5rem 0;
+  width: 330px;
+  height: 700px;
+  background-color: var(--dark-grey);
+  margin: 5rem 0 2rem 0;
+  padding: 0 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 header{
-  max-width: 200px ;
-  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 header img{
-  width: 100%;
-  margin-top: 3em;
+  width: 50%;
   border-radius: 50%;
+  animation: abajoArriba 2000ms;
 }
+
+.contenido_header p{
+  animation: derechaIzquierda 2000ms;
+}
+.contenido_header span:hover{
+  color: var(--green);
+}
+.titulo{
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  animation: arribaAbajo 2000ms;
+}
+
+.ubicacion{
+  font-size: 1.1rem;
+  color: var(--green);
+  margin-bottom: 2rem;
+  animation: izquierdaDerecha 2000ms;
+}
+
+.contenido{
+  width: 280px;
+  text-align: center;
+}
+
+.contenido li{
+  width: 100%;
+  background-color: var(--grey);
+  font-weight: 700;
+  padding: 1rem;
+  list-style: none;
+  border-radius: 1rem;
+  margin-bottom: 1rem ;
+  transition: width 3s;
+}
+.contenido li:hover{
+  width: 70%;
+  text-decoration: double;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: var(--green);
+  text-transform: uppercase;
+  color: var(--grey);
+  cursor: pointer;
+}
+
+.contenido li:last-child{
+  margin-bottom: 0;
+}
+
+/*Media queries*/
+
+@media (min-width: 760px ) { 
+
+  /*body{
+    overflow: hidden;
+  }*/
+  .contenedor{
+    width: 400px;
+  }
+
+  .contenido{
+    width: 350px;
+  }
+}
+/*footer*/
+footer{
+  .attribution{
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    /*color: hsl(228, 45%, 44%);*/
+    color: var(--green);
+  }
+}
+
+/*Animacioes*/
+
+@keyframes abajoArriba{
+  0%{
+    transform: translateY(-1600px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+@keyframes arribaAbajo{
+  0%{
+    transform: translateY(1600px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+@keyframes derechaIzquierda{
+  0%{
+    transform: translateX(600px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+@keyframes izquierdaDerecha{
+  0%{
+    transform: translateX(-600px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+
+/*Desktop*/
+
+/*Media queries*/
