@@ -68,7 +68,7 @@ header img{
 }
 
 .contenido_header p{
-  animation: derechaIzquierda 2000ms;
+  animation: derechaIzquierda 3000ms;
 }
 .contenido_header span:hover{
   color: var(--green);
@@ -83,7 +83,7 @@ header img{
   font-size: 1.1rem;
   color: var(--green);
   margin-bottom: 2rem;
-  animation: izquierdaDerecha 2000ms;
+  animation: izquierdaDerecha 3000ms;
 }
 
 .contenido{
@@ -100,7 +100,9 @@ header img{
   border-radius: 1rem;
   margin-bottom: 1rem ;
   transition: width 3s;
+  animation: derechaIzquierda 4s;
 }
+
 .contenido li:hover{
   width: 70%;
   text-decoration: double;
@@ -120,9 +122,6 @@ header img{
 
 @media (min-width: 760px ) { 
 
-  /*body{
-    overflow: hidden;
-  }*/
   .contenedor{
     width: 400px;
   }
@@ -136,8 +135,9 @@ footer{
   .attribution{
     font-size: 11px;
     text-align: center;
+    animation: abajoArriba 3s;
   }
-  .attribution a {
+  .attribution a{
     /*color: hsl(228, 45%, 44%);*/
     color: var(--green);
   }
